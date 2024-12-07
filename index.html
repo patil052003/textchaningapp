@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    </style>
+    <link rel="icon" type="image/jpg" href="gymlogo.jpeg"/>
+     <link rel="stylesheet " href="app.css">
+     <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Text app</title>
+</head>
+<body>
+    <div class="slider-container" style="align-items: center;">
+        <div class="slides">
+            <div class="slide" > 
+                <img src="img4.avif" class="active"> 
+                <textarea class="note" id="note2" name="comments" rows="4" cols="60" placeholder="Enter your text here..." ></textarea> 
+               
+            </div>
+            <div class="slide" id="note">
+                 <img src="img3.avif">
+                 <textarea class="note" id="note2" name="comments" rows="4" cols="60" placeholder="Enter your text here..." ></textarea> 
+
+            </div> 
+            <div class="slide"id="note"> 
+                <img src="img2.avif"> 
+                <textarea class="note" id="note2" name="comments" rows="4" cols="60" placeholder="Enter your text here..." ></textarea> 
+               
+            </div> 
+            <div class="slide"id="note">
+                 <img src="img1.avif"> 
+                 <textarea class="note" id="note2" name="comments" rows="4" cols="60" placeholder="Enter your text here..." ></textarea> 
+                 
+            </div>
+        </div>
+        <div class="button">
+           <span class="next">&#10095;</span>
+           <span class="prev">&#10094;</span>
+        </div>
+        <div class="dotsContainer">
+            <div class="dot active" attr="0">
+            </div>
+            <div class="dot" attr="1"></div>
+            <div class="dot" attr="2"></div>
+            <div class="dot" attr="3"></div>
+        </div>
+    </div>
+   <div class="section">
+    <div class="rows">
+        <div class="col" style="display: inline-block !important;">
+             <div class="first box">
+                <input type="number"
+                id=" fint-size"
+                min="1"
+                max="188"
+                value="16"
+                onchange="f1(this)">
+             </div>
+            <div class="second box">
+                <button type="button" onclick="f2(this)">
+                    <i class="fa-solid fa-bold"></i>
+                </button>
+                <button type="button" onclick="f3(this)">
+                    <i class="fa-solid fa-italic"></i>
+                </button>
+                <button type="button" onclick="f4(this)">
+                    <i class="fa-solid fa-underline"></i>
+                </button>
+            </div>
+            <div class="third box">
+                <button type="button" onclick="f5(this)">
+                    <i class="fa-solid fa-align-left"></i>
+                </button>
+                <button type="button" onclick="f6(this)">
+                    <i class="fa-solid fa-align-center"></i>
+                </button>
+                <button type="button" onclick="f7(this)">
+                    <i class="fa-solid fa-align-right"></i>
+                </button>
+            </div>
+            <div class="fourth box">
+                <button type="button" onclick="f8(this)">
+                   aA
+                </button>
+                <button type="button" onclick="f9(this)">
+                    <i class="fa-solid fa-text-slash"></i>
+                 </button>
+                 
+        </div>
+        <input type="color" onchange="f10(this)">
+
+        <select onchange="changeFontFamily(this)"> <option value="Arial">Arial</option> <option value="Courier New">Courier New</option> <option value="Georgia">Georgia</option> <option value="Times New Roman">Times New Roman</option> <option value="Verdana">Verdana</option> </select>        <!-- <div class="col"></div> -->
+    </div>
+   </div> 
+   </div>
+    <script src="app.js"></script>
+</body>
+</html>
